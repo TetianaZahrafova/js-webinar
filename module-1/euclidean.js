@@ -2,9 +2,9 @@
  * The function determines the greatest common divisor or
  * the given two numbers.
  *
- * @param {number} a (a > 0)
- * @param {number} b (b > 0)
- * @returns {number} GCD or 0 if any arguments are not proper
+ @param {number} a (a > 0)
+ @param {number} b (b > 0)
+ @returns {number} GCD or 0 if any arguments are not proper
  */
 function euclidean(a, b) {
     let gcd;
@@ -16,8 +16,20 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    if (a > 0 && b > 0){
+        while (a !== b){
+            if (a>b){
+            a = a-b;
+            }
+            else {
+            b = b-a
+            }
+        }
+            gcd = a
+        }
+    else {
+        gcd = 0;
+    }
     // ...AND THIS COMMENT LINE!
     return gcd;
 }
