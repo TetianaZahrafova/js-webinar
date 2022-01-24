@@ -47,3 +47,10 @@ function grade(score) {
     return gradeOfStudent;
 }
 module.exports = grade;
+
+function randomNumbers() {
+let n = [0, 0, 0, 0]
+
+
+return (n, )}
+console.log(randomNumbers)
